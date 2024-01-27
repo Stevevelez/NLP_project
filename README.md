@@ -1,6 +1,6 @@
 Upload the picture here. 
 
-# NLP_project: Sentiment analysis on Google Reviews
+# NLP Project: Sentiment analysis on Google Reviews
 
 ## Project Review
 
