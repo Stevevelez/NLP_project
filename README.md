@@ -91,10 +91,10 @@ review_elements = driver.find_elements(By.XPATH, "//div[contains(@class, 'MyEned
 # Locating the star rating elements
 star_rating_elements = driver.find_elements(By.XPATH, "//span[contains(@class, 'kvMYJc')]")
 
-```python
+```
 
 ## Generating file
-```
+```python
 
 import pandas as pd
 
