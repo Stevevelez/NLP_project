@@ -94,7 +94,7 @@ star_rating_elements = driver.find_elements(By.XPATH, "//span[contains(@class, '
 
 ```
 
-**Generating file**
+## Generating file
 ```
 
 import pandas as pd
