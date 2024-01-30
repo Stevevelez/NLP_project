@@ -36,6 +36,19 @@ With the initial phase of data gathering centered on Lambton College's Google re
 
 ## Chapter 4: EDA (Exploratory Data Analysis)
 
+**3.1 Import Libraries for Webscrapping**
+
+import time
+from time import sleep
+import random
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+
+
+
+
 Exploring our dataset through visual representation is a crucial step in uncovering patterns, correlations, and potential anomalies. In the initial phase of our analysis, we employed Pyplot and Seaborn to create insightful plots that allowed us to visually grasp the nuances of our data. By utilizing heatmaps and correlation matrices, we delved deeper into the relationships between different variables. These visual tools provided a comprehensive view, enabling us to identify patterns in the data and assess correlations among various attributes. Additionally, this approach facilitated the detection of any inconsistencies or biases in the dataset. Through this thorough exploration, we aim to gain a robust understanding of our data, laying the foundation for informed decision-making and the development of our correlation methodology.
 
 ## Chapter 5: Data Modelling
