@@ -36,7 +36,7 @@ With the initial phase of data gathering centered on Lambton College's Google re
 
 ## Chapter 4: Web Scrapping
 
-**3.1 Import Libraries for Web Scrapping**
+### 3.1 Import Libraries for Web Scrapping**
 
 
 ```python
@@ -49,7 +49,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 
 ```
-## Web scrapping Code
+### 3.2 Web scrapping Code
 ```python
 
 scrollingScript = """ 
@@ -93,7 +93,7 @@ star_rating_elements = driver.find_elements(By.XPATH, "//span[contains(@class, '
 
 ```
 
-## Generating file
+### 3.3 Generating Dataframe
 ```python
 
 import pandas as pd
