@@ -11,7 +11,8 @@ This realization sparked our interest in embarking on a project aimed at correla
 ## Chapters
 
 **Problem Definition:** Not always a correlation between the reviews and the number of stars in Google reviews exists. 
-<strong> Data Gathering: </strong> Webscrapping Google reviews.<br>
+<strong> Data Gathering: </strong> Webscrapping Google reviews.
+<br>
 Data Preparation: ____
 EDA (Exploratory Data Analysis): By graphing our data, we can find patterns, correlations, and unfair data. 
 In the first stage, we did some plotting using Pyplot and Seaborn which allowed us to visualize our data and libraIn this step, I used heatmaps and correlation matrices to analyze the data.
