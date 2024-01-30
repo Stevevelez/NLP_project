@@ -34,9 +34,9 @@ Rating: Number of stars given.
 
 With the initial phase of data gathering centered on Lambton College's Google reviews, the subsequent step involved meticulous data preparation. The information extracted through web scraping was organized into a structured format within a CSV file. The dataset comprises three key columns: "Name," representing the reviewer's identity; "Comment," encapsulating the textual content of the reviews; and "Rating," indicating the numerical value of stars awarded by the respective users. This systematic arrangement ensures a coherent and standardized dataset, laying the groundwork for subsequent analyses and the development of our correlation methodology. The emphasis on meticulous data preparation is vital to guaranteeing the accuracy and reliability of insights drawn from the collected information, enabling us to effectively address the identified challenge in online reviews.
 
-## Chapter 4: EDA (Exploratory Data Analysis)
+## Chapter 4: Web Scrapping
 
-**3.1 Import Libraries for Webscrapping**
+**3.1 Import Libraries for Web Scrapping**
 
 
 ```python
@@ -49,7 +49,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 
 ```
-## Code
+## Web scrapping Code
 ```python
 
 scrollingScript = """ 
@@ -92,6 +92,10 @@ review_elements = driver.find_elements(By.XPATH, "//div[contains(@class, 'MyEned
 # Locating the star rating elements
 star_rating_elements = driver.find_elements(By.XPATH, "//span[contains(@class, 'kvMYJc')]")
 
+```
+
+**Generating file**
+```
 
 import pandas as pd
 
