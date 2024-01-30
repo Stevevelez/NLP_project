@@ -10,7 +10,7 @@ This realization sparked our interest in embarking on a project aimed at correla
 
 ## Chapters
 
-Problem Definition: Not always a correlation between the reviews and the number of stars in Google reviews exists. 
+**Problem Definition:** Not always a correlation between the reviews and the number of stars in Google reviews exists. 
 Data Gathering: Webscrapping Google reviews.
 Data Preparation: ____
 EDA (Exploratory Data Analysis): By graphing our data, we can find patterns, correlations, and unfair data. 
