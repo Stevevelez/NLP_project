@@ -12,8 +12,7 @@ This realization sparked our interest in embarking on a project aimed at correla
 
 **Problem Definition:** Not always a correlation between the reviews and the number of stars in Google reviews exists. 
 <strong> Data Gathering: </strong> Webscrapping Google reviews.
-<br>
-Data Preparation: ____
+<br> Data Preparation: ____
 EDA (Exploratory Data Analysis): By graphing our data, we can find patterns, correlations, and unfair data. 
 In the first stage, we did some plotting using Pyplot and Seaborn which allowed us to visualize our data and libraIn this step, I used heatmaps and correlation matrices to analyze the data.
 Data Modelling: In this project, we used Selenium for Webscapping and VADER and TextBlob for the Sentiment analysis. Furthermore, we used Pandas for dataset management and Seaborn and Pyplot for plotting our data. 
