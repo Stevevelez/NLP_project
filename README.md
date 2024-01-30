@@ -36,7 +36,7 @@ With the initial phase of data gathering centered on Lambton College's Google re
 
 ## Chapter 4: Web Scrapping
 
-### 3.1 Import Libraries for Web Scrapping**
+### 3.1 Importing Libraries for Web Scrapping**
 
 
 ```python
