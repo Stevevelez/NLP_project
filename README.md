@@ -38,6 +38,7 @@ With the initial phase of data gathering centered on Lambton College's Google re
 
 **3.1 Import Libraries for Webscrapping**
 
+'''
 import time
 from time import sleep
 import random
@@ -45,7 +46,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
-
+'''
 
 
 
