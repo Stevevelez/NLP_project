@@ -175,9 +175,10 @@ reviews_dist = df.Rating.value_counts().sort_index() \
 reviews_dist.set_xlabel('Review Stars')
 plt.show()
 
+```
+
 ![fotico](https://github.com/Stevevelez/NLP_project/assets/112830443/d2c3fd5e-2a8e-4cca-8cae-eba4219e425f)
 
-```
 
 
 
