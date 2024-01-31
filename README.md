@@ -177,7 +177,6 @@ plt.show()
 
 ![Imagen](fotico.png)
 
-
 ```
 
 
