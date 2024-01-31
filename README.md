@@ -36,7 +36,7 @@ With the initial phase of data gathering centered on Lambton College's Google re
 
 ## Chapter 4: Web Scrapping
 
-### 3.1 Importing Libraries for Web Scrapping**
+### 4.1 Importing Libraries for Web Scrapping
 
 
 ```python
@@ -49,7 +49,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 
 ```
-### 3.2 Web scrapping Code
+### 4.2 Web scrapping Code
 ```python
 
 scrollingScript = """ 
@@ -93,7 +93,7 @@ star_rating_elements = driver.find_elements(By.XPATH, "//span[contains(@class, '
 
 ```
 
-### 3.3 Generating Dataframe
+### 4.3 Generating Dataframe
 ```python
 
 import pandas as pd
@@ -128,6 +128,61 @@ print(df.Comment)
 Exploring our dataset through visual representation is a crucial step in uncovering patterns, correlations, and potential anomalies. In the initial phase of our analysis, we employed Pyplot and Seaborn to create insightful plots that allowed us to visually grasp the nuances of our data. By utilizing heatmaps and correlation matrices, we delved deeper into the relationships between different variables. These visual tools provided a comprehensive view, enabling us to identify patterns in the data and assess correlations among various attributes. Additionally, this approach facilitated the detection of any inconsistencies or biases in the dataset. Through this thorough exploration, we aim to gain a robust understanding of our data, laying the foundation for informed decision-making and the development of our correlation methodology.
 
 ## Chapter 5: Data Modelling
+
+### 5.1 Importing Libraries for Web Scrapping
+
+```python
+
+import pandas as pd
+import re
+import nltk
+from nltk.stem import WordNetLemmatizer
+from nltk.corpus import stopwords
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from nltk.sentiment import SentimentIntensityAnalyzer
+plt.style.use('ggplot')
+
+```
+
+### 5.2 
+
+```python
+
+df = pd.read_csv('/content/--------------') #csv is in my google drive
+
+df.head(3) 
+
+Name	Comment	      Rating
+0	William Thomas	Very Difficult to pass in Lambton College in Mississauga...	1 star
+1	Amal M	      Lambton College in Mississauga provided me with...	      5 stars
+2	Jasraj Uppal	Lambton College Mississauga is simply exceptional...	      5 stars
+
+df['Rating'] = df['Rating'].str.extract('(\d+)').astype(int) # extract only the numeric part of the column
+
+df.head(3)
+
+Name	Comment	      Rating
+0	William Thomas	Very Difficult to pass in Lambton College in Mississauga...	1
+1	Amal M	      Lambton College in Mississauga provided me with...	      5
+2	Jasraj Uppal	Lambton College Mississauga is simply exceptional...	      5
+
+reviews_dist = df.Rating.value_counts().sort_index() \
+    .plot(kind='bar',
+          title='Count of Reviews by Stars',
+          figsize=(10, 5), color='cadetblue')
+reviews_dist.set_xlabel('Review Stars')
+plt.show()
+
+```
+
+
+
+
+
+
+
 
 Within this project, our data modeling process involved leveraging specific tools to extract, analyze, and manage our dataset. Selenium played a key role in web scraping, allowing us to efficiently gather data from online sources. For sentiment analysis, we employed VADER and TextBlob, enabling us to delve into the emotional nuances expressed in the textual content of the reviews. In terms of dataset management, Pandas proved to be a robust tool, facilitating seamless organization and manipulation of our collected data. To visualize our findings, we utilized Seaborn and Pyplot, harnessing their capabilities to create informative plots that aid in the interpretation of patterns and correlations within the dataset. This holistic approach to data modeling ensures a comprehensive understanding of the information at hand and supports the subsequent stages of our project.
 
