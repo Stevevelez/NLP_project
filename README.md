@@ -26,9 +26,9 @@ The prevalent issue in online reviews, particularly on platforms like Google, is
 
 The Data Gathering process was done through Webscrapping on Lambton College's Google reviews. The data collected was later copied into a CSV file,  resulting in three columns and one-hundred twenty-eight rows. The column names are listed below:
 
-Name: Name of the person who writes the review. 
-Comment: Review
-Rating: Number of stars given. 
+**Name:** Name of the person who writes the review. <br>
+**Comment:** Review <br>
+**Rating:** Number of stars given. 
 
 ## Chapter 3: Data Preparation
 
