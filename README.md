@@ -175,7 +175,7 @@ reviews_dist = df.Rating.value_counts().sort_index() \
 reviews_dist.set_xlabel('Review Stars')
 plt.show()
 
-<img src="fotico">
+![Plot](fotico.png)
 
 ```
 
