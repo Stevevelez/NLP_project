@@ -177,6 +177,7 @@ plt.show()
 
 ![Imagen](NLP_project/fotico.png)
 
+
 ```
 
 
