@@ -278,7 +278,7 @@ plt.show()
 
 ```
 
-![Vader](Vader vs rating.png)
+![Vader](Vader_vs_rating.png)
 
 
 
