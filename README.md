@@ -219,14 +219,61 @@ def normalize_text(text):
 
     return normalized_text
 
-# Assuming 'df' is your DataFrame and 'Comment' is the column
+
 # Apply the normalization function to the Comment column
 df['Normalized_Comment'] = df['Comment'].apply(normalize_text)
 
-# Display the first few rows of the DataFrame to check the results
-df.head(10)
 
 ```
+
+### 5.4 Sentiment analysis with Vader 
+
+# Download VADER lexicon
+nltk.download('vader_lexicon')
+
+# Initialize the VADER sentiment intensity analyzer
+sia = SentimentIntensityAnalyzer()
+
+# Function to get sentiment scores
+def get_sentiment_scores(text):
+    return sia.polarity_scores(text)
+
+# Apply the function to the DataFrame
+df['Sentiment_Scores'] = df['Normalized_Comment'].apply(get_sentiment_scores)
+
+# Creating columns in the dataframe regarding Sentiment_scores
+df['neg'] = df['Sentiment_Scores'].apply(lambda x: x.get('neg', 0))
+df['neu'] = df['Sentiment_Scores'].apply(lambda x: x.get('neu', 0))
+df['pos'] = df['Sentiment_Scores'].apply(lambda x: x.get('pos', 0))
+df['compound'] = df['Sentiment_Scores'].apply(lambda x: x.get('compound', 0))
+
+### 5.5 Plotting results
+
+# Create the bar plot
+plt.figure(figsize=(10, 6))  # Set the figure size for better readability
+ax = sns.barplot(x='Rating', y='compound', data=df, errorbar='sd', palette='coolwarm', capsize=0.1)
+
+# Set the title and labels for clarity
+ax.set_title('Vader vs Rating', fontsize=16)
+ax.set_xlabel('Google Star Rating', fontsize=14)
+ax.set_ylabel('Average Compound Sentiment Score', fontsize=14)
+
+# Improve the display of the y-axis and x-axis ticks
+plt.yticks(fontsize=12)
+plt.xticks(fontsize=12)
+
+# Optional: Annotate each bar with the mean value
+for p in ax.patches:
+    ax.annotate(format(p.get_height(), '.2f'),
+                (p.get_x() + p.get_width() / 2., p.get_height()),
+                ha = 'center', va = 'center',
+                xytext = (0, 9),
+                textcoords = 'offset points')
+
+# Show the plot
+plt.tight_layout()  # Adjust the plot to ensure everything fits without overlapping
+plt.show()
+
 
 
 
