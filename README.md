@@ -129,7 +129,7 @@ Exploring our dataset through visual representation is a crucial step in uncover
 
 ## Chapter 5: Data Modelling
 
-### 5.1 Importing Libraries for Web Scrapping
+### 5.1 Importing Libraries 
 
 ```python
 
@@ -146,7 +146,7 @@ plt.style.use('ggplot')
 
 ```
 
-### 5.2 
+### 5.2 EDA
 
 ```python
 
