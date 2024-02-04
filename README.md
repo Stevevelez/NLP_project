@@ -249,7 +249,11 @@ df['neu'] = df['Sentiment_Scores'].apply(lambda x: x.get('neu', 0))
 df['pos'] = df['Sentiment_Scores'].apply(lambda x: x.get('pos', 0))
 df['compound'] = df['Sentiment_Scores'].apply(lambda x: x.get('compound', 0))
 
-### 5.5 Plotting results
+```
+
+### 5.5 Plotting VADER results
+
+```python
 
 # Create the bar plot
 plt.figure(figsize=(10, 6))  # Set the figure size for better readability
@@ -280,6 +284,57 @@ plt.show()
 
 ![Vader](Vader_vs_rating.png)
 
+### 5.5 Sentiment Analysis with Textblob
+
+```python
+
+from textblob import TextBlob
+
+# Function to get sentiment polarity using TextBlob
+def get_sentiment_polarity(text):
+    blob = TextBlob(text)
+    return blob.sentiment.polarity
+
+# Function to get sentiment subjectivity using TextBlob
+def get_sentiment_subjectivity(text):
+    blob = TextBlob(text)
+    return blob.sentiment.subjectivity
+
+# Apply the functions to the DataFrame
+df['Sentiment_Polarity'] = df['Normalized_Comment'].apply(lambda x: get_sentiment_polarity(x))
+df['Sentiment_Subjectivity'] = df['Normalized_Comment'].apply(lambda x: get_sentiment_subjectivity(x))
+
+# Display the updated DataFrame
+print(df[['Rating', 'Sentiment_Polarity']])
+
+```
+
+### 5.5 Plotting VADER results
+
+# Create the bar plot
+plt.figure(figsize=(10, 6))  # Set the figure size for better readability
+ax = sns.barplot(x='Rating', y='Sentiment_Polarity', data=df, errorbar='sd', palette='coolwarm', capsize=0.1)
+
+# Set the title and labels for clarity
+ax.set_title('TextBlob vs Rating', fontsize=16)
+ax.set_xlabel('Google Star Rating', fontsize=14)
+ax.set_ylabel('Average Compound Sentiment Score', fontsize=14)
+
+# Improve the display of the y-axis and x-axis ticks
+plt.yticks(fontsize=12)
+plt.xticks(fontsize=12)
+
+# Optional: Annotate each bar with the mean value
+for p in ax.patches:
+    ax.annotate(format(p.get_height(), '.2f'),
+                (p.get_x() + p.get_width() / 2., p.get_height()),
+                ha = 'center', va = 'center',
+                xytext = (0, 9),
+                textcoords = 'offset points')
+
+# Show the plot
+plt.tight_layout()  # Adjust the plot to ensure everything fits without overlapping
+plt.show()
 
 
 
