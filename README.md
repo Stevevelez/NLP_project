@@ -228,6 +228,8 @@ df['Normalized_Comment'] = df['Comment'].apply(normalize_text)
 
 ### 5.4 Sentiment analysis with Vader 
 
+```python
+
 # Download VADER lexicon
 nltk.download('vader_lexicon')
 
@@ -274,6 +276,9 @@ for p in ax.patches:
 plt.tight_layout()  # Adjust the plot to ensure everything fits without overlapping
 plt.show()
 
+```
+
+![fotico](https://github.com/Stevevelez/NLP_project/assets/112830443/d2c3fd5e-2a8e-4cca-8cae-eba4219e425f)
 
 
 
