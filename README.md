@@ -181,8 +181,52 @@ plt.show()
 
 
 
+### 5.3 Normalizing text
 
+```python
 
+import emoji
+
+# Download required NLTK data
+nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('stopwords')
+
+# Define a function to handle emojis
+def handle_emojis(text):
+    # Translate each emoji to text
+    text = emoji.demojize(text)
+    return text
+
+# Define a text normalization function
+def normalize_text(text):
+    # Handle emojis
+    text = handle_emojis(text)
+
+    # Convert to lowercase
+    text = text.lower()
+
+    # Remove punctuation and numbers (keeping emojis)
+    text = re.sub(r'[^a-zA-Z\s:]', '', text)
+
+    # Tokenize text
+    tokens = nltk.word_tokenize(text)
+
+    # Lemmatization and removing stop words
+    lemmatizer = WordNetLemmatizer()
+    stop_words = set(stopwords.words('english'))
+    normalized_text = ' '.join([lemmatizer.lemmatize(word) for word in tokens if word not in stop_words])
+
+    return normalized_text
+
+# Assuming 'df' is your DataFrame and 'Comment' is the column
+# Apply the normalization function to the Comment column
+df['Normalized_Comment'] = df['Comment'].apply(normalize_text)
+
+# Display the first few rows of the DataFrame to check the results
+df.head(10)
+
+```
 
 
 
