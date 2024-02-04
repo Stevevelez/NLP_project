@@ -341,7 +341,7 @@ plt.show()
 ```
 
 
-![TextBlob](TextBlob_vs_rating.png)
+![TextBlob](textBlob_vs_rating.png)
 
 
 
