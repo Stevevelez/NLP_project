@@ -311,6 +311,8 @@ print(df[['Rating', 'Sentiment_Polarity']])
 
 ### 5.5 Plotting VADER results
 
+```python
+
 # Create the bar plot
 plt.figure(figsize=(10, 6))  # Set the figure size for better readability
 ax = sns.barplot(x='Rating', y='Sentiment_Polarity', data=df, errorbar='sd', palette='coolwarm', capsize=0.1)
@@ -336,6 +338,10 @@ for p in ax.patches:
 plt.tight_layout()  # Adjust the plot to ensure everything fits without overlapping
 plt.show()
 
+```
+
+
+![TextBlob](TextBlob_vs_rating.png)
 
 
 
