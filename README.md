@@ -17,8 +17,6 @@ This realization sparked our interest in embarking on a project aimed at correla
 [**Chapter 4.1: Importing Libraries for Web Scrapping**](#chapter-4.1-Importing-Libraries-for-Web-Scrapping) <br>
 [**Chapter 4.2: Web Scrapping Code**](#chapter-4.2-Web-Scrapping-Code) <br>
 [**Chapter 4.3: Generating Dataframe**](#chapter-4.3-Generating-Dataframe) <br>
-[**Chapter 4.3: Generating Dataframe**](#chapter-4.3-Generating-Dataframe) <br>
-
 [**Chapter 5: Data Modelling**](#chapter-5-Data-Modelling) <br>
 [**Chapter 6: Conclusions**](#chapter-6-Conclusions) <br>
 
@@ -40,7 +38,7 @@ With the initial phase of data gathering centered on Lambton College's Google re
 
 ## Chapter 4: Web Scrapping
 
-### 4.1 Importing Libraries for Web Scrapping
+## 4.1 Importing Libraries for Web Scrapping
 
 
 ```python
