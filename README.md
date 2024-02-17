@@ -1,4 +1,4 @@
-![reviews](reviews.jpg)
+<img src="reviews.jpg" alt="reviews" width="1200" height="800">
 
 # NLP Project: Sentiment analysis on Google Reviews
 
