@@ -1,4 +1,4 @@
-Upload the picture here. 
+![reviews](reviews.jpng)
 
 # NLP Project: Sentiment analysis on Google Reviews
 
