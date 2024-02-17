@@ -14,9 +14,6 @@ This realization sparked our interest in embarking on a project aimed at correla
 [**Chapter 2: Data Gathering**](#chapter-2-Data-gathering) <br>
 [**Chapter 3: Data Preparation**](#chapter-3-Data-preparation) <br>
 [**Chapter 4: Web Scrapping**](#chapter-4-Web-Scrapping) <br>
-[**Chapter 4.1: Importing Libraries for Web Scrapping**](#chapter-4.1-Importing-Libraries-for-Web-Scrapping) <br>
-[**Chapter 4.2: Web Scrapping Code**](#chapter-4.2-Web-Scrapping-Code) <br>
-[**Chapter 4.3: Generating Dataframe**](#chapter-4.3-Generating-Dataframe) <br>
 [**Chapter 5: Data Modelling**](#chapter-5-Data-Modelling) <br>
 [**Chapter 6: Conclusions**](#chapter-6-Conclusions) <br>
 
@@ -38,7 +35,7 @@ With the initial phase of data gathering centered on Lambton College's Google re
 
 ## Chapter 4: Web Scrapping
 
-## 4.1 Importing Libraries for Web Scrapping
+### Importing Libraries for Web Scrapping
 
 
 ```python
@@ -51,7 +48,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 
 ```
-### 4.2 Web Scrapping Code
+### Web Scrapping Code
 ```python
 
 scrollingScript = """ 
@@ -95,7 +92,7 @@ star_rating_elements = driver.find_elements(By.XPATH, "//span[contains(@class, '
 
 ```
 
-### 4.3 Generating Dataframe
+### Generating Dataframe
 ```python
 
 import pandas as pd
@@ -131,7 +128,7 @@ Exploring our dataset through visual representation is a crucial step in uncover
 
 ## Chapter 5: Data Modelling
 
-### 5.1 Importing Libraries 
+### Importing Libraries 
 
 ```python
 
@@ -148,7 +145,7 @@ plt.style.use('ggplot')
 
 ```
 
-### 5.2 EDA
+### EDA
 
 ```python
 
@@ -183,7 +180,7 @@ plt.show()
 
 
 
-### 5.3 Normalizing text
+### Normalizing text
 
 ```python
 
@@ -228,7 +225,7 @@ df['Normalized_Comment'] = df['Comment'].apply(normalize_text)
 
 ```
 
-### 5.4 Sentiment analysis with Vader 
+### Sentiment analysis with Vader 
 
 ```python
 
@@ -253,7 +250,7 @@ df['compound'] = df['Sentiment_Scores'].apply(lambda x: x.get('compound', 0))
 
 ```
 
-### 5.5 Plotting VADER results
+### Plotting VADER results
 
 ```python
 
@@ -286,7 +283,7 @@ plt.show()
 
 ![Vader](Vader_vs_rating.png)
 
-### 5.5 Sentiment Analysis with Textblob
+### Sentiment Analysis with Textblob
 
 ```python
 
@@ -311,7 +308,7 @@ print(df[['Rating', 'Sentiment_Polarity']])
 
 ```
 
-### 5.5 Plotting VADER results
+### Plotting VADER results
 
 ```python
 
