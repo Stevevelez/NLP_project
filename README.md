@@ -9,18 +9,20 @@ Often, when contemplating trying out a new restaurant or purchasing a new produc
 This realization sparked our interest in embarking on a project aimed at correlating the number of stars with sentiment analysis of the reviews. We chose to focus on Lambton College initially, but the methodology can be applied to any site or item featured in Google reviews.
 
 ## Chapters
-[Chapter 1: Introduction](#chapter-1-introduction)
 
-[Chapter 1: Problem Definition](#chapter-1-Problem-definition) 
-Not always a correlation between the reviews and the number of stars in Google reviews exists. <br>
-<strong> Data Gathering: </strong> Webscrapping Google reviews.<br>
-**Data Preparation:** ____ <br>
-**EDA (Exploratory Data Analysis):** By graphing our data, we can find patterns, correlations, and unfair data. <br>
-In the first stage, we did some plotting using Pyplot and Seaborn which allowed us to visualize our data and libraIn this step, I used heatmaps and correlation matrices to analyze the data. <br>
-**Data Modelling:** In this project, we used Selenium for Webscapping and VADER and TextBlob for the Sentiment analysis. Furthermore, we used Pandas for dataset management and Seaborn and Pyplot for plotting our data. <br>
-**Validate Model:** Revise this.... 
+[**Chapter 1: Problem Definition**](#chapter-1-Problem-definition) <br>
+[**Chapter 2: Data Gathering**](#chapter-2-Data-gathering) <br>
+[**Chapter 3: Data Preparation**](#chapter-3-Data-preparation) <br>
+[**Chapter 4: Web Scrapping**](#chapter-4-Web-Scrapping) <br>
+[**Chapter 4.1: Importing Libraries for Web Scrapping**](#chapter-4.1-Importing-Libraries-for-Web-Scrapping) <br>
+[**Chapter 4.2: Web Scrapping Code**](#chapter-4.2-Web-Scrapping-Code) <br>
+[**Chapter 4.3: Generating Dataframe**](#chapter-4.3-Generating-Dataframe) <br>
+[**Chapter 4.3: Generating Dataframe**](#chapter-4.3-Generating-Dataframe) <br>
 
-# Chapter 1: Problem definition
+[**Chapter 5: Data Modelling**](#chapter-5-Data-Modelling) <br>
+[**Chapter 6: Conclusions**](#chapter-6-Conclusions) <br>
+
+## Chapter 1: Problem definition
 
 The prevalent issue in online reviews, particularly on platforms like Google, is the inconsistency between assigned star ratings and the sentiments conveyed in user reviews. When deciding on a new restaurant or product, users often find discrepancies between numerical ratings and the actual experiences described. This misalignment poses a significant challenge: the need for a more accurate correlation between quantitative ratings and qualitative sentiments. Our project, initially centered on Lambton College, aims to address this gap by developing a methodology applicable to any site or item on Google reviews. Our goal is to create a more reliable connection between star ratings and user sentiments, ultimately enhancing the reliability and usefulness of online reviews in decision-making processes.
 
@@ -51,7 +53,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 
 ```
-### 4.2 Web scrapping Code
+### 4.2 Web Scrapping Code
 ```python
 
 scrollingScript = """ 
