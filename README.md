@@ -9,8 +9,9 @@ Often, when contemplating trying out a new restaurant or purchasing a new produc
 This realization sparked our interest in embarking on a project aimed at correlating the number of stars with sentiment analysis of the reviews. We chose to focus on Lambton College initially, but the methodology can be applied to any site or item featured in Google reviews.
 
 ## Chapters
+[Chapter 1: Introduction](#chapter-1-introduction)
 
-**Problem Definition:** Not always a correlation between the reviews and the number of stars in Google reviews exists. <br>
+[**1. Problem Definition:] Not always a correlation between the reviews and the number of stars in Google reviews exists. <br>
 <strong> Data Gathering: </strong> Webscrapping Google reviews.<br>
 **Data Preparation:** ____ <br>
 **EDA (Exploratory Data Analysis):** By graphing our data, we can find patterns, correlations, and unfair data. <br>
