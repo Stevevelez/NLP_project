@@ -2,7 +2,7 @@
 
 # NLP Project: Sentiment analysis on Google Reviews
 
-## Table of contents
+# Table of contents
 
 [**Chapter 1: Project Review**](#chapter-1-Project-Review) <br>
 <br>
