@@ -256,6 +256,14 @@ df['pos'] = df['Sentiment_Scores'].apply(lambda x: x.get('pos', 0))
 df['compound'] = df['Sentiment_Scores'].apply(lambda x: x.get('compound', 0))
 
 ```
+## Vader Results
+<strong> Rating </strong> <br>
+1   -0.281584 <br>
+2   -0.390150 <br>
+3    0.214838 <br>
+4    0.300059 <br>
+5    0.654207 <br>
+
 
 ### Plotting VADER results
 
@@ -290,6 +298,7 @@ plt.show()
 
 ![Vader](Vader_vs_rating.png)
 
+
 ### Sentiment Analysis with Textblob
 
 ```python
@@ -314,7 +323,14 @@ df['Sentiment_Subjectivity'] = df['Normalized_Comment'].apply(lambda x: get_sent
 print(df[['Rating', 'Sentiment_Polarity']])
 
 ```
-
+## Textblob results
+<strong> Rating </strong> <br>
+1   -0.133950 <br>
+2   -0.216250 <br>
+3   -0.031250 <br>
+4    0.201961 <br>
+5    0.412100 <br>
+ 
 ### Plotting Textblob results
 
 ```python
