@@ -22,7 +22,7 @@
 
 Often, when contemplating trying out a new restaurant or purchasing a new product, we turn to reviews to gauge the opinions of others on websites and Google. However, upon careful examination, we may discover that these opinions don't always align with the star ratings assigned to the respective site or item.
 
-This realization sparked our interest in embarking on a project aimed at correlating the number of stars with sentiment analysis of the reviews. We chose to focus on Lambton College initially, but the methodology can be applied to any site or item featured in Google reviews.
+This realization sparked our interest in embarking on a project aimed at correlating the number of stars with sentiment analysis of the reviews. We chose to focus on Lambton College, Mississauga, but the methodology can be applied to any site or item featured in Google reviews.
 
 ## Chapter 2: Problem definition
 
@@ -30,7 +30,7 @@ The prevalent issue in online reviews, particularly on platforms like Google, is
 
 ## Chapter 3: Data Gathering
 
-The Data Gathering process was done through Webscrapping on Lambton College's Google reviews. The data collected was later copied into a CSV file,  resulting in three columns and one-hundred twenty-eight rows. The column names are listed below:
+The Data Gathering process was done through Web Scrapping on Lambton College's Google reviews. The data collected was later copied into a CSV file,  resulting in three columns and one-hundred twenty-eight rows. The column names are listed below:
 
 **Name:** Name of the person who writes the review. <br>
 **Comment:** Review <br>
