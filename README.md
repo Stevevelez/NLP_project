@@ -371,3 +371,38 @@ Within this project, our data modeling process involved leveraging specific tool
 
 ## Chapter 7: Conclusions
 
+``` python
+
+# Correlation between Rating and Vader model
+correlation_pearson = df['Rating'].corr(df['compound'], method='pearson')
+correlation_spearman = df['Rating'].corr(df['compound'], method='spearman')
+correlation_kendall = df['Rating'].corr(df['compound'], method='kendall')
+
+print(f"Pearson correlation: {correlation_pearson}")
+print(f"Spearman correlation: {correlation_spearman}")
+print(f"Kendall correlation: {correlation_kendall}")
+
+```
+## Correlation between Rating and Vader model results
+
+Pearson correlation: 0.7167347462004036 <br>
+Spearman correlation: 0.6821584609628527 <br>
+Kendall correlation: 0.5696631485792537 <br>
+
+``` python
+
+# Correlation between Rating and TextBlob model
+correlation_pearson = df['Rating'].corr(df['Sentiment_Polarity'], method='pearson')
+correlation_spearman = df['Rating'].corr(df['Sentiment_Polarity'], method='spearman')
+correlation_kendall = df['Rating'].corr(df['Sentiment_Polarity'], method='kendall')
+
+print(f"Pearson correlation: {correlation_pearson}")
+print(f"Spearman correlation: {correlation_spearman}")
+print(f"Kendall correlation: {correlation_kendall}")
+
+```
+## Correlation between Rating and TextBlob model results
+
+Pearson correlation: 0.6291802933420455 <br>
+Spearman correlation: 0.6614473203785487 <br>
+Kendall correlation: 0.5389382237047353 <br>
