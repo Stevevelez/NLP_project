@@ -6,17 +6,17 @@
 
 [**Chapter 1: Project Review**](#chapter-1-Project-Review) <br>
 <br>
-[**Chapter 2: Problem Definition**](#chapter-1-Problem-definition) <br>
+[**Chapter 2: Problem Definition**](#chapter-2-Problem-definition) <br>
 <br>
-[**Chapter 3: Data Gathering**](#chapter-2-Data-gathering) <br>
+[**Chapter 3: Data Gathering**](#chapter-3-Data-gathering) <br>
 <br>
-[**Chapter 4: Data Preparation**](#chapter-3-Data-preparation) <br>
+[**Chapter 4: Data Preparation**](#chapter-4-Data-preparation) <br>
 <br>
-[**Chapter 5: Web Scrapping**](#chapter-4-Web-Scrapping) <br>
+[**Chapter 5: Web Scrapping**](#chapter-5-Web-Scrapping) <br>
 <br>
-[**Chapter 6: Data Modelling**](#chapter-5-Data-Modelling) <br>
+[**Chapter 6: Data Modelling**](#chapter-6-Data-Modelling) <br>
 <br>
-[**Chapter 7: Conclusions**](#chapter-6-Conclusions) <br>
+[**Chapter 7: Conclusions**](#chapter-7-Conclusions) <br>
 
 ## Chapter 1: Project Review
 
