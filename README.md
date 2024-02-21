@@ -16,7 +16,7 @@
 <br>
 [**Chapter 6: Data Modelling**](#chapter-6-Data-Modelling) <br>
 <br>
-[**Chapter 7: Conclusions**](#chapter-7-Conclusions) <br>
+[**Chapter 7: Results**](#chapter-7-Results) <br>
 
 ## Chapter 1: Project Review
 
@@ -369,8 +369,7 @@ plt.show()
 
 Within this project, our data modeling process involved leveraging specific tools to extract, analyze, and manage our dataset. Selenium played a key role in web scraping, allowing us to efficiently gather data from online sources. For sentiment analysis, we employed VADER and TextBlob, enabling us to delve into the emotional nuances expressed in the textual content of the reviews. In terms of dataset management, Pandas proved to be a robust tool, facilitating seamless organization and manipulation of our collected data. To visualize our findings, we utilized Seaborn and Pyplot, harnessing their capabilities to create informative plots that aid in the interpretation of patterns and correlations within the dataset. This holistic approach to data modeling ensures a comprehensive understanding of the information at hand and supports the subsequent stages of our project.
 
-## Chapter 7: Conclusions
-
+## Chapter 7: Results
 ``` python
 
 # Correlation between Rating and Vader model
