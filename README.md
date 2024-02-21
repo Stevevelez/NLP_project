@@ -17,6 +17,8 @@
 [**Chapter 6: Data Modelling**](#chapter-6-Data-Modelling) <br>
 <br>
 [**Chapter 7: Results**](#chapter-7-Results) <br>
+<br>
+[**Chapter 8: Findings**](#chapter-8-Findings) <br>
 
 ## Chapter 1: Project Review
 
@@ -370,6 +372,9 @@ plt.show()
 Within this project, our data modeling process involved leveraging specific tools to extract, analyze, and manage our dataset. Selenium played a key role in web scraping, allowing us to efficiently gather data from online sources. For sentiment analysis, we employed VADER and TextBlob, enabling us to delve into the emotional nuances expressed in the textual content of the reviews. In terms of dataset management, Pandas proved to be a robust tool, facilitating seamless organization and manipulation of our collected data. To visualize our findings, we utilized Seaborn and Pyplot, harnessing their capabilities to create informative plots that aid in the interpretation of patterns and correlations within the dataset. This holistic approach to data modeling ensures a comprehensive understanding of the information at hand and supports the subsequent stages of our project.
 
 ## Chapter 7: Results
+
+After thoroughly examining and Normalizing the reviews, we applied both TextBlob and Vader models to ensure comprehensive sentiment analysis. Following this preprocessing step, we proceeded to conduct correlation tests to validate the correlation between the provided ratings and the sentiments expressed in the reviews for Lambton College, Mississauga. The analysis was performed utilizing the Pearson, Spearman, and Kendall methods. The results of these assessments are presented below."
+
 ``` python
 
 # Correlation between Rating and Vader model
@@ -405,3 +410,7 @@ print(f"Kendall correlation: {correlation_kendall}")
 Pearson correlation: 0.6291802933420455 <br>
 Spearman correlation: 0.6614473203785487 <br>
 Kendall correlation: 0.5389382237047353 <br>
+
+## Chapter 8: Findings
+
+The correlation analysis revealed significant positive associations between the ratings assigned to Lambton College, Mississauga, and the sentiment analysis results obtained from both the Vader and TextBlob models. Specifically, the Pearson correlation coefficients for the Vader and TextBlob models were 0.717 and 0.629, respectively, indicating a strong linear relationship between the variables. These findings were further supported by Spearman and Kendall correlations, demonstrating consistent and robust associations across different statistical methods.
